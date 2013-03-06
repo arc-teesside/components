@@ -1,0 +1,45 @@
+ {
+	"id": 10,
+	"className": "image",
+	"name": "Image",
+	"description": "Image",
+	"category": "Media",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/img.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organization": "ARC Teesside University"
+	}],
+	"html": "image.html",
+	"attributes": [{
+		"shortName": "src",
+		"name": "URL",
+		"type": "String",
+		"required": true,
+		"value": "http://arc.tees.ac.uk/WIDEST/Media/defaultImage.jpg"
+	}, {
+		"shortName": "alt",
+		"name": "Alternative text",
+		"type": "String"
+	}, {
+		"shortName": "width",
+		"name": "Width (px)",
+		"type": "Number",
+		"value": 150
+	}, { 
+			"shortName": "action",
+			"name": "On click Action",
+			"type": "Action"
+	}],
+	"guidances": [{
+		"priority": "high",
+		"text": "The image is missing it's URL",
+		"shortName": "src"
+	}, {
+		"priority": "medium",
+		"text": "An image should have an alternative text",
+		"shortName": "alt"
+	}]
+}

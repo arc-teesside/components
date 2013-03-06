@@ -1,0 +1,42 @@
+{
+	"id": '',
+	"className": "checkbox",
+	"name": "Checkbox",
+	"description": "A Simple tickbox with possibility to assign action on click",
+	"category": "Input",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/checkbox.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "checkbox.html",
+	"javascript": "checkbox.js",
+	"attributes": [{
+		"shortName": "text",
+		"name": "Text",
+		"type": "String",
+		"required": false,
+		"value": "Attach Text"
+	}, {
+		"shortName": "val",
+		"name": "Value",
+		"type": "String",
+		"required": false
+	}, { 
+		"shortName": "action",
+		"name": "Action on tick",
+		"type": "Action"
+	}, { 
+		"shortName": "onuntick",
+		"name": "Action on untick",
+		"type": "Action"
+	}, {
+		"shortName": "checked",
+		"name": "Checked by default",
+		"type": "Boolean",
+		"value": false
+	}]
+}

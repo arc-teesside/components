@@ -1,0 +1,73 @@
+{
+	"id":"sound",
+	"className":"sound",
+	"name":"Sound",
+	"description":"Audio Sound Component in WAV format",
+	"category":"Media",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/soundIcon.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"component.js",
+	"stylesheet":"",
+	"themes": [],
+	"attributes":[
+		{
+			"shortName":"text",
+			"name":"Text",
+			"type":"String",
+			"input":false,
+			"required":false,
+			"value":"ring"
+		},
+		{
+			"shortName":"src",
+			"name":"Source",
+			"type":"String",
+			"input":false,
+			"required":true,
+			"value":"ring",
+			"choices": [{"str": "alarm"}, {"str": "android"}, {"str": "ring"}, {"str": "starwars"} ]
+		},
+		{
+			"shortName":"controls",
+			"name":"Controls",
+			"type":"String",
+			"input":false,
+			"required":true,
+			"value":"controls",
+			"choices": [{"str": "controls"}, {"str": "loop"}, {"str": "autoplay"}, {"str": "none"} ]
+		}
+	],
+	"actions":[{
+			"shortName": "play",
+			"name": "Play sound"
+		},{
+			"shortName": "pause",
+			"name": "Pause sound"
+	}],
+	"guidances":[
+		{
+			"priority":"low",
+			"text":"You might change the sound source",
+			"shortName":"src"
+		},
+		{
+			"priority":"low",
+			"text":"You might change the alt text",
+			"shortName":"text"
+		},
+		{
+			"priority":"low",
+			"text":"You can change the controls to 'loop', 'autoplay' or 'none' for no controls",
+			"shortName":"controls"
+		}
+	]
+}

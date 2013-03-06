@@ -1,0 +1,9 @@
+<table id="@[id]" class="grid component">
+@[loop!y=@[rows]]
+	<tr id="@[id]-row@[!y]">
+	@[loop!x=@[columns]]
+		<td id="@[id]-cell@[!x]-@[!y]"><div id="ph@[id]X@[!x]Y@[!y]" class="placeholder"><!--@[ph@[id]X@[!x]Y@[!y]]-->&nbsp;</div></td>
+	@[end!x]
+	</tr>
+@[end!y]
+</table>

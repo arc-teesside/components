@@ -1,0 +1,82 @@
+{
+	"id":"rssfeed",
+	"className":"rssfeed",
+	"name":"rssfeed",
+	"description":"RSS Feed Reader",
+	"category":"Services",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/rssFeed.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Kevin Turnbull/Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"component.js",
+	"stylesheet":"component.css",
+	"themes": [{
+			"name": "Default",
+			"file":"component.css"
+		}
+	],
+	"attributes":[
+		{
+			"shortName":"title",
+			"name":"Title text",
+			"type":"String",
+			"value":"RSS Feeds"
+		},
+		{
+			"shortName":"feeds",
+			"name":"Number of feeds",
+			"type":"Number",
+			"value":2
+		},
+		{
+			"shortName":"url",
+			"name":"Feed source URL",
+			"type":"String",
+			"value":"http://www.tees.ac.uk/sections/news/rss.xml"
+		},
+		{
+			"shortName":"showdesc",
+			"name":"Show description",
+			"type":"Boolean",
+			"value":true
+		},
+		{
+			"shortName":"showdate",
+			"name":"Show feed date",
+			"type":"Boolean",
+			"value":true
+		},
+		{
+			"shortName":"height",
+			"name":"Height in pixels",
+			"type":"Number",
+			"value":300
+		},
+		{
+			"shortName":"width",
+			"name":"Width in pixels",
+			"type":"Number",
+			"value":400
+		}
+	],
+	"actions":[],
+	"guidances":[
+		{
+			"priority":"low",
+			"text":"You can edit the displayed title and display source.",
+			"shortName":"title"
+		},
+		{
+			"priority":"medium",
+			"text":"You should enter the number of feeds and source etc.",
+			"shortName":"url"
+		}
+	]
+}

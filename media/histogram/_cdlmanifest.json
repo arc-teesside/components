@@ -1,0 +1,76 @@
+{
+	"id":"histogram",
+	"className":"histogram",
+	"name":"Histogram",
+	"description":"Graph shown as a Histogram",
+	"category":"Media",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/histogram.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Kevin Turnbull/Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"component.js",
+	"stylesheet":"component.css",
+	"themes": [{
+			"name": "Default",
+			"file":"component.css"
+		}
+	],
+	"attributes":[
+		{
+			"shortName":"title",
+			"name":"Title text",
+			"type":"String",
+			"value":"Histogram"
+		},
+		{
+			"shortName":"columns",
+			"name":"Number of columns",
+			"type":"Number",
+			"value":2
+		},
+		{
+			"shortName":"labels",
+			"name":"Column labels",
+			"type":"String",
+			"value":"Label 1,Label 2"
+		},
+		{
+			"shortName":"values",
+			"name":"Column values",
+			"type":"String",
+			"value":"1.0,2.0"
+		},
+		{
+			"shortName":"height",
+			"name":"Height in pixels",
+			"type":"Number",
+			"value":300
+		},
+		{
+			"shortName":"width",
+			"name":"Width in pixels",
+			"type":"Number",
+			"value":400
+		}
+	],
+	"actions":[],
+	"guidances":[
+		{
+			"priority":"low",
+			"text":"You can edit the displayed title text.",
+			"shortName":"title"
+		},
+		{
+			"priority":"high",
+			"text":"You should enter the number of columns, labels and values",
+			"shortName":"columns"
+		}
+	]
+}

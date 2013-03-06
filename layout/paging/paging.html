@@ -1,0 +1,14 @@
+<div id="@[id]" class="component">
+	@[loop!y=@[nbPage]]
+	<div id="@[id]-page@[!y]" class="slides placeholder inactivePage"><!--@[@[id]-page@[!y]]-->&nbsp;</div>
+	@[end!y]
+	<div id="@[id]-bottom">
+		<div id="@[id]-pageLink">
+			@[loop!y=@[nbPage]]
+			<a href="#" onclick="@[id].goToPage(@[!y]);return false;">@[!y]</a>
+			@[end!y]
+		</div>
+		<div id="@[id]-pageIndicator"><span id="@[id]-activePage"></span>/4</div>
+		<div style="clear:both;"></div>
+	</div>
+</div>

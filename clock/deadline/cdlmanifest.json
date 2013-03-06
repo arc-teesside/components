@@ -1,0 +1,71 @@
+{
+	"id":"",
+	"className":"deadline",
+	"name":"Deadline",
+	"description":"Deadline countdown",
+	"category":"Clock",
+	"icon":"temp/textClock.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Franck",
+			"email":"",
+			"link":"",
+			"organisation":"Teesside University"
+		}
+	],
+	"html":"deadline.html",
+	"javascript":"deadline.js",
+	"stylesheet":"deadline.css",
+	"themes": [{
+		"name": "Default",
+		"file": "deadline.css"
+	}],
+	"dependencies": [{
+		"name": "jquery-countdown"
+	}],
+	"attributes":[
+		{
+			"shortName":"day",
+			"name":"Day (1-31)",
+			"type":"Number",
+			"input":true,
+			"required":true
+		}, {
+			"shortName": "displayText",
+			"name": "Display top text",
+			"type": "Boolean",
+			"value": true
+		}, {
+			"shortName": "month",
+			"name": "Month (1-12)",
+			"type": "String",
+			"input":true,
+			"required":true,
+			"value": ""
+		}, {
+			"shortName":"year",
+			"name":"Year",
+			"type":"Number",
+			"input":true,
+			"required":true
+		}, {
+			"shortName":"time",
+			"name":"Time (hh:mm)",
+			"type":"String",
+			"input":true,
+			"required":true
+		}
+	],
+	"actions": [{
+			"shortName": "startCountdown",
+			"name": "Update deadline"
+	}],
+	"guidances":[
+		{
+			"priority":"medium",
+			"text":"The deadline needs to be set",
+			shortName:"day"
+		}
+	]
+}

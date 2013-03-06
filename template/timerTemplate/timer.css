@@ -1,0 +1,16 @@
+
+/* timerTemplate CSS Document */
+
+#timerTemplate {
+	position: absolute;
+	width: @[height]px;
+	height: @[width]px;
+	margin: 0 0 0 0;
+	background: white;
+}
+
+
+p {
+	text-align: center; 
+	padding: 4px 0 0 0;
+}

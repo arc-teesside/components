@@ -1,0 +1,28 @@
+ {
+	"id": 8,
+	"className": "text",
+	"name": "Text",
+	"description": "Simple static text",
+	"category": "Text",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/text.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "text.html",
+	"attributes": [{
+		"shortName": "text",
+		"name": "Text",
+		"type": "String",
+		"required": true,
+		"value": "Your text here"
+	}],
+	"guidances": [{
+		"priority": "medium",
+		"text": "This component can should have a text",
+		"shortName": "text"
+	}]
+}

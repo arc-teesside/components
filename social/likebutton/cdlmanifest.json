@@ -1,0 +1,20 @@
+{
+	"id": "likebutton",
+	"className": "likebutton",
+	"name": "Like Button",
+	"description": "Facebook Like Button",
+	"category": "Social",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/likeButton.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Geoffrey LEROUX",
+		"email": "l1369383@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	dependencies: [{
+			"name": "facebook api"
+	}],
+	"html": "likebutton.html",
+	"javascript": "likebutton.js",
+}

@@ -1,0 +1,52 @@
+{
+	"id": "",
+	"className": "datepicker",
+	"name": "Date Picker",
+	"description": "A date picker that can also be used as a simple calendar",
+	"category": "Input",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/datepicker.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organization": "ARC Teesside University"
+	}],
+	"html": "datepicker.html",
+	"javascript": "datepicker.js",
+	"dependencies": [
+		"jquery-ui"
+	],
+	"attributes": [{
+			"shortName": "selectedDate",
+			"name": "Selected Date",
+			"type": "String",
+			"output": true
+		}, {
+			"shortName": "yearAsMenu",
+			"name": "Display years/months as menus",
+			"type": "Boolean",
+			"value": false
+	}, {
+			"shortName": "showWeekNumber",
+			"name": "Display weeks number",
+			"type": "Boolean",
+			"value": false
+	}, {
+			"shortName": "displayMultiple",
+			"name": "Display multiple months (3)",
+			"type": "Boolean",
+			"value": false
+	}, {
+			"shortName": "attached2Texbox",
+			"name": "Attach to a textbox",
+			"type": "Boolean",
+			"value": false
+	}, {
+			"shortName": "dateFormat",
+			"name": "Date format",
+			"type": "String",
+			"value": "standard",
+			"choices": [{ "str": "standard" }, { "str": "us" }]
+	}]
+}

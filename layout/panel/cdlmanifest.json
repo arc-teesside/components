@@ -1,0 +1,91 @@
+{
+	"id":"panel",
+	"className":"panel",
+	"name":"Configurable placeholder panel",
+	"description":"Blank placeholder Component",
+	"category":"Layout",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/panel.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"component.js",
+	"stylesheet":"component.css",
+	"themes": [{
+			"name": "Default",
+			"file":"component.css"
+		}
+	],
+	"attributes":[
+		{
+			"shortName":"shown",
+			"name":"Show or Hide",
+			"type":"Number",
+			"required":true,
+			"value":1
+		},{
+			"shortName":"header",
+			"name":"Header Text",
+			"type":"String",
+			"required":false,
+			"value":""
+		},{
+			"shortName": "width",
+			"name": "Width (px)",
+			"type": "Number",
+			"required": true,
+			"value": 300
+		},{
+			"shortName": "height",
+			"name": "Height (px)",
+			"type": "Number",
+			"required": true,
+			"value": 400
+		},{
+			"shortName": "overflow",
+			"name": "Overflow clip",
+			"type": "String",
+			"required": true,
+			"value": "auto"
+		},{
+			"shortName": "image",
+			"name": "Background image",
+			"type": "String",
+			"required": true,
+			"value": ""
+		}
+	],
+	"actions": [
+		{
+			"shortName": "show",
+			"name": "Show content",
+			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/playIcon.png"
+		},{
+			"shortName": "hide",
+			"name": "Hide content",
+			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/pauseIcon.png"
+		},{
+			"shortName": "collapse",
+			"name": "Collapse panel",
+			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/stopIcon.png"
+		}
+	],
+	"guidances":[
+		{
+			"priority":"low",
+			"text":"You can edit the header text and display attributes.",
+			"shortName":"header"
+		},
+		{
+			"priority":"low",
+			"text":"You can set a values of 1 and 0 to show or hide (or -1 to collapse panel)",
+			"shortName":"shown"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+#@[id] {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+#@[id]-caption{
+	display: in-line;
+}
+/*
+.caption {
+	display: block;
+}
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}*/
+	

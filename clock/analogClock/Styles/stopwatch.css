@@ -1,0 +1,36 @@
+
+/* analogClock CSS Document */
+
+p {
+	text-align: center; 
+	padding: 4px 0 0 0;
+}
+
+
+#@[id] {
+	width: @[width]px;
+	height:@[width]px;
+	display:inline-block
+	/*margin: 7px 0 0 0;*/
+}
+
+#@[id]-clock {
+	position: relative;
+	text-align:center;
+	/*margin: 7px 0 0 0;*/
+}
+
+#@[id]-sec, #@[id]-min, #@[id]-hour {
+	position: absolute;
+	width: @[width]px;
+	height:@[width]px;
+	top: 0px;
+}
+
+#@[id]-sec {
+	z-index: 3;
+}
+
+#@[id]-min {
+	z-index: 2;
+}

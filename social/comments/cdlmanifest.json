@@ -1,0 +1,44 @@
+ {
+	"id": '',
+	"className": "comments",
+	"name": "Open comment",
+	"description": "Open persistent comments",
+	"category": "Social",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/comments-add-icon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organization": "ARC Teesside University"
+	}],
+	"html": "comments.html",
+	"javascript": "comments.js",
+	"stylesheet": "comments.css",
+	"dependencies": [{
+		"name": "jquery"
+	}],
+	"themes": [{
+			"name": "Default",
+			"file": "comments.css"
+	}],
+	"attributes": [{
+		"shortName": "blockHeight",
+		"name": "Height (px)",
+		"type": "Number",
+		"required": true,
+		"value": "100"
+	}, {
+		"shortName": "blockWidth",
+		"name": "Width (px)",
+		"type": "Number",
+		"required": true,
+		"value": "270"
+	}, {
+		"shortName": "fontSize",
+		"name": "Font size (px)",
+		"type": "Number",
+		"required": true,
+		"value": "14"
+	}]
+}

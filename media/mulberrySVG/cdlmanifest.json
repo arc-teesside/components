@@ -1,0 +1,75 @@
+{
+	"id":"mulberrysvg",
+	"className":"mulberrysvg",
+	"name":"Symbol",
+	"description":"Image for a Mulberry Symbol in SVG format",
+	"category":"Media",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/symbolIcon.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"",
+	"stylesheet":"component.css",
+	"themes": [{
+			"name": "Default",
+			"file":"component.css"
+		}, {
+			"name": "Bordered",
+			"file": "bordered.css"
+		}, {
+			"name": "Text Below",
+			"file": "withtext.css"
+	}],
+	"attributes":[
+		{
+			"shortName":"text",
+			"name":"Text",
+			"type":"String",
+			"input":false,
+			"required":false,
+			"value":"berry"
+		},
+		{
+			"shortName":"src",
+			"name":"Source",
+			"type":"String",
+			"input":false,
+			"required":true,
+			"value":"berry",
+			"choices":[{"str":"berry"}, {"str":"dog"}, {"str":"cat"}]
+		},
+		{
+			"shortName":"size",
+			"name":"Size",
+			"type":"Number",
+			"input":false,
+			"required":true,
+			"value":64
+		}
+	],
+	"actions":[],
+	"guidances":[
+		{
+			"priority":"medium",
+			"text":"You might edit the displayed text.",
+			"shortName":"text"
+		},
+		{
+			"priority":"medium",
+			"text":"You can change the displayed image.",
+			"shortName":"src"
+		},
+		{
+			"priority":"low",
+			"text":"You can change the image size (height and width).",
+			"shortName":"size"
+		}
+	]
+}

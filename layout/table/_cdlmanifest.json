@@ -1,0 +1,36 @@
+{
+	"id": "table",
+	"className": "table",
+	"name": "Table",
+	"description": "Simple table layout",
+	"category": "Layout",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/table.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	
+	"html": "table.html",
+	"javascript": "table.js",
+	"stylesheet": "table.css",
+	"themes": [],
+	
+	"attributes": [{
+		"shortName": "rows",
+		"name": "Nb Rows",
+		"type": "Number",
+		"required": true,
+		"value": 3
+	}, {
+		"shortName": "cols",
+		"name": "Nb Columns",
+		"type": "Number",
+		"required": true,
+		"value": 2
+	}],
+	
+	"guidances": []
+}

@@ -1,0 +1,28 @@
+#@[id] {
+    width: @[width]px;
+}
+
+#@[id] .slides {
+    width: @[width]px;
+    height: @[height]px;
+    border: 1px solid #ccc;
+}
+
+#@[id]-bottom {
+	width:100%;
+}
+
+#@[id]-pageIndicator {
+	float:right;
+}
+
+#@[id]-pageLink {
+	float:left;
+}
+.activePage {
+	display:block !important;
+}
+
+.inactivePage {
+	display:none !important;
+}

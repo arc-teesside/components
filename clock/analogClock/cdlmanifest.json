@@ -1,0 +1,114 @@
+{
+	"id": 1,
+	"className": "analogClock",
+	"name": "Analog Clock",
+	"description": "Analog looking clock timer using CSS3 for animation",
+	"category": "Clock",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/analogClock.png",
+	"placeHolder": "placeholder12",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "analog.html",
+	"javascript": "analog.js",
+	"stylesheet": "analog.css",
+	"themes": [{
+			"name": "Default",
+			"file":"analog.css"
+		}, {
+			"name": "Black",
+			"file": "analogBlack.css"
+		}, {
+			"name": "Blue",
+			"file": "analogBlue.css"
+		}, {
+			"name": "Red",
+			"file": "analogRed.css"
+		}, {
+			"name": "Green",
+			"file": "analogGreen.css"
+		}, {
+			"name": "Roman numbers",
+			"file": "roman.css"
+		}, {
+			"name": "Roman number thin",
+			"file": "romanThin.css"
+		}, {
+			"name": "Gradient green",
+			"file": "sarah.css"
+		}, {
+			"name": "Silver",
+			"file": "silver.css"
+		}, {
+			"name": "Silver cyan",
+			"file": "silverCyan.css"
+		}, {
+			"name": "Silver rainbow",
+			"file": "silverRainbow.css"
+		}, {
+			"name": "Silver white",
+			"file": "silverWhite.css"
+		}, {
+			"name": "Simple",
+			"file": "simple.css"
+		}, {
+			"name": "Simple ARC Logo",
+			"file": "simpleARClogo.css"
+		}, {
+			"name": "Simple Rainbow",
+			"file": "simpleRainbow.css"
+		}, {
+			"name": "Square",
+			"file": "square.css"
+		}, {
+			"name": "Square blue",
+			"file": "squareBlue.css"
+		}, {
+			"name": "Square green",
+			"file": "squareGreen.css"
+		}, {
+			"name": "Squre grey",
+			"file": "squareGrey.css"
+		}, {
+			"name": "Square pink",
+			"file": "squarePink.css"
+		}, {
+			"name": "Square yellow",
+			"file": "squareYellow.css"
+		}, {
+			"name": "Stopwatch",
+			"file": "stopwatch.css"
+	}],
+	"dependencies": [{
+		"name": "jquery"
+	}],
+	"attributes": [{
+		"shortName": "startTime",
+		"name": "Starting time (mins)",
+		"type": "Number",
+		"input": true,
+		"required": true
+	}, {
+		"shortName": "width",
+		"name": "Width (px)",
+		"type": "Number",
+		"value": 200
+	}],
+	"actions": [{
+			"shortName": "launchCountdown",
+			"name": "Start Countdown",
+			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/playIcon.png"
+		}, {
+			"shortName": "resetClock",
+			"name": "Reset clock",
+			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/stopIcon.png"
+	}],
+	"guidances": [{
+			"priority": "high",
+			"text": "The clock needs a starting time",
+			"shortName": "startTime"
+	}]
+}

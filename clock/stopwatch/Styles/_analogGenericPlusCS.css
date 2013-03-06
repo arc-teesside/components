@@ -1,0 +1,80 @@
+/* analogClock CSS Document */
+
+#@[id]-clock {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 7px 0 0 0;
+	background: url(@[URL:components]/clock/analogClock/Styles/@[style]/clockface.jpg);
+	list-style: none;
+}
+
+#@[id]-sec, #@[id]-min, #@[id]-hour {
+	position: absolute;
+	width: 10px;
+	height: 200px;
+	top: 0px;
+	left: 95px;
+}
+
+#@[id]-sec {
+	background: url(@[URL:components]/clock/analogClock/Styles/@[style]/sechand.png);
+	z-index: 3;
+}
+
+#@[id]-min {
+	background: url(@[URL:components]/clock/analogClock/Styles/@[style]/minhand.png);
+	z-index: 2;
+}
+
+#@[id]-hour {
+	background: url(@[URL:components]/clock/analogClock/Styles/@[style]/hourhand.png);
+	z-index: 1;
+}
+
+p {
+	text-align: center; 
+	padding: 4px 0 0 0;
+}
+
+
+/* revisions needed within jason.aspc.cs */
+
+	/* Add to top (public partial class json) ADD two lines */
+	/*
+	Hashtable URL = new Hashtable();  
+	URL["components"] = "http://arc.tees.ac.uk/WIDEST/widget/components";
+	
+	*/
+	/* modify private string WidgatReplace */
+	/*
+	private string WidgatReplace(string DirURI, string template)  // unchanged
+	..
+	inputCSS = replaceComponentCSS(inputCSS, "", componentPath, stylesheet, id); // separate componentPath + stylesheet
+	*/
+	
+	/* modify private string replaceComponentCSS */
+	/*
+	private string replaceComponentCSS(string inputFile, string placeholder, string componentPath, string style, string id)  // ADD param style
+        {
+        if (!componentPath.EndsWith(".css")) { return inputFile; }  //allow for self-contained CSS
+        try
+        {
+			string style = (stylesheet+"\n").Replace(".css\n", "");  // ADD line
+            string componentText = File.ReadAllText(componentPath + "styles/" + stylesheet);  // modify line
+            // make internal component changes first
+            componentText = componentText.Replace("@[id]", id);  // replace id
+			componentText = componentText.Replace("@[URL:components]", URL["components"]);  // ADD URL line
+			componentText = componentText.Replace("Styles/@[style]", style);  // ADD replace style line
+            //add user defined attributes @[@..] or action @[!..]
+            //append component into file
+            inputFile += "\r\n" + componentText + "\r\n";
+        }
+        catch
+        {
+            inputFile += "\r\n" + "\/\*ERROR: the style for " + id + " (" + componentPath + ") is not defined \*\/\r\n";
+        }
+            return inputFile;
+    }
+	*/
+		

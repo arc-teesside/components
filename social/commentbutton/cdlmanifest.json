@@ -1,0 +1,20 @@
+{
+	"id": "commentbutton",
+	"className": "commentbutton",
+	"name": "Comment Block",
+	"description": "Facebook Comment Block showing comments and allowing users to connect and comment",
+	"category": "Social",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/commentButton.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Geoffrey LEROUX",
+		"email": "l1369383@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	dependencies: [{
+			"name": "facebook api"
+	}],
+	"html": "commentbutton.html",
+	"javascript": "commentbutton.js",
+}

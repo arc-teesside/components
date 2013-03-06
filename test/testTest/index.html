@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Translate API Example</title>
+</head>   
+  <body onload="Search()">
+  <!--body-->
+   <div id="content"
+   		style="background: #EEE; font-family:Arial, Helvetica, sans-serif; font-size: 1.0em; width: 400px; height: 300px">
+  	<h1 style="font-size:1.4em"><center>Text Translator</center></h1>
+  	<textarea id="sourceText" rows="5" cols="50" hint="Replace this text"
+    	style="background: #FFF; font: inherit; margin-left:15px">Hello there!</textarea><br /><br/>
+    <span id="label" style="margin-left:15px">Translate into</span>
+    <select id="Language"  onchange="Search()" style="font:: inherit; font-size:inherit; ">
+    	<option selected value=""></option>
+        <option value="ar">Arabic</option>
+        <option value="bg">Bulgarian</option>
+        <option value="zh-CN">Chinese</option>
+        <option value="fr">French</option>
+    	<option value="de">German</option>
+		<option value="el">Greek</option>
+        <option value="hi">Hindi</option>
+        <option value="it">Italian</option>
+        <option value="ja">Japanese</option>
+        <option value="no">Norwegian</option>
+        <option value="ru">Russian</option>
+        <option value="es">Spanish</option>
+    </select>
+    <input type="button" onclick="Search()" value="Go" />
+    <!--div id="translation"></div-->
+    <div id="output"></div>
+    <textarea id="translation" rows="5" cols="50" style="background: &FFF; font: inherit; margin-left:15px"></textarea><br />
+    <!--input type="button" onclick="Search()" value="Go Bing" /-->
+    
+    <script id="searchCallback" type="text/javascript" src="">
+    </script>
+
+    <script type="text/javascript">
+	
+    function tag(name) { return document.getElementById(name) }
+	
+    // Bing Developer Center AppId.
+    var AppId = "98C7FE59742B83FF7C1A62EE7A9DC42F58AB92A7"; 
+    
+    // Bing API 2.2 code sample demonstrating the use of the
+    // Translation SourceType over the JSON Protocol.
+    function Search()
+    {
+        var requestStr = "http://api.bing.net/json.aspx?"
+        
+            // Common request fields (required)
+            + "AppId=" + AppId
+            + "&Query=" + escape(document.getElementById("sourceText").value)
+            + "&Sources=Translation"
+            
+            // Common request fields (optional)
+            + "&Version=2.2"
+            
+           // SourceType-specific fields (required)
+            + "&Translation.SourceLanguage=en" 
+            + "&Translation.TargetLanguage=" + document.getElementById("Language").value
+
+            // JSON-specific request fields (optional)
+            + "&JsonType=callback"
+            + "&JsonCallback=SearchCompleted";
+
+         var requestScript = document.getElementById("searchCallback");
+         requestScript.src = requestStr;
+    }
+
+    function SearchCompleted(response)
+    {
+        var errors = response.SearchResponse.Errors;
+        if (errors != null)
+        {
+            // There are errors in the response. Display error details.
+            //DisplayErrors(errors);
+			tag("translation").value = "Error detected by Bing API";
+        }
+        else
+        {
+            // There were no errors in the response. Display the
+            // Translation results.
+            // DisplayResults(response);
+			var results = response.SearchResponse.Translation.Results;
+			tag("translation").value = results[0].TranslatedTerm;
+        }
+    }
+	
+    function DisplayResults(response)
+    {
+        var output = document.getElementById("output");
+        var resultsHeader = document.createElement("h4");
+        var resultsList = document.createElement("ul");
+        output.appendChild(resultsHeader);
+        output.appendChild(resultsList);
+    
+        var results = response.SearchResponse.Translation.Results;
+        
+        // Display the results header.
+        resultsHeader.innerHTML = "Bing API Version "
+            + response.SearchResponse.Version
+            + "<br />Translation results for "
+            + response.SearchResponse.Query.SearchTerms
+            + "<br />";
+        
+        // Display the Translation results.
+        var resultsListItem = null;
+        for (var i = 0; i < results.length; ++i)
+        {
+            resultsListItem = document.createElement("li");
+            resultsList.appendChild(resultsListItem);
+            resultsListItem.innerText = results[0].TranslatedTerm;
+        }
+    }
+    
+        function DisplayErrors(errors)
+    {
+        var output = document.getElementById("output");
+        var errorsHeader = document.createElement("h4");
+        var errorsList = document.createElement("ul");
+        output.appendChild(errorsHeader);
+        output.appendChild(errorsList);
+        
+        // Iterate over the list of errors and display error details.
+        errorsHeader.innerHTML = "Errors:";
+        var errorsListItem = null;
+        for (var i = 0; i < errors.length; ++i)
+        {
+            errorsListItem = document.createElement("li");
+            errorsList.appendChild(errorsListItem);
+            errorsListItem.innerHTML = "";
+            for (var errorDetail in errors[i])
+            {
+                errorsListItem.innerHTML += errorDetail
+                    + ": "
+                    + errors[i][errorDetail]
+                    + "<br />";
+            }
+            
+            errorsListItem.innerHTML += "<br />";
+        }
+    }
+    
+    </script>
+ 
+    </div>
+</body>
+</html>

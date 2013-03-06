@@ -1,0 +1,50 @@
+{
+	"id": '',
+	"className": "twochoicesquiz",
+	"name": "Two-choices Quiz",
+	"description": "A question component with two possible answers",
+	"category": "Quiz",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/2quiz.gif",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "twochoicesquiz.html",
+	"javascript": "twochoicesquiz.js",
+	"stylesheet":"twochoicesquiz.css",
+	"themes": [{
+			"name": "Default",
+			"file": "twochoicesquiz.css"
+	}],
+	"attributes": [{
+		"shortName": "symbol",
+		"name": "Symbol",
+		"type": "String",
+		"required": false
+	}, {
+		"shortName": "width",
+		"name": "Symbol width (px)",
+		"type": "Number",
+		"required": false
+	}, {
+		"shortName": "question",
+		"name": "Question",
+		"type": "String",
+		"required": true
+	}, {
+		"shortName": "right",
+		"name": "Right answer",
+		"type": "String",
+		"required": true,
+		"choices": [{"str": "Valid tick"}, {"str": "Invalid tick"}, {"str": "Happy smiley"}, {"str": "Sad smiley"}]
+	}, {
+		"shortName": "wrong",
+		"name": "Wrong answer",
+		"type": "String",
+		"required": true,
+		"choices": [{"str": "Valid tick"}, {"str": "Invalid tick"}, {"str": "Happy smiley"}, {"str": "Sad smiley"}]
+	}]
+}

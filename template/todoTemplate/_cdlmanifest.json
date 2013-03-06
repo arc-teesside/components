@@ -1,0 +1,45 @@
+{
+   "id":"template",
+   "className":"timerTemplate",
+   "name":"Timer Template",
+   "description":"The template component for the timer Widget",
+   "category":"Template",
+   "icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/template.png",
+   "placeHolder":"content",
+   "authors":[
+      {
+         "name":"Steve Green",
+         "email":"s.j.green@tees.ac.uk",
+         "link":"http://arc.tees.ac.uk",
+         "organisation":"ARC Teesside University"
+      }
+   ],
+   "html":"timer.html",
+   "javascript":"timer.js",
+   "stylesheet":"timer.css",
+   "themes":[
+      {
+         "name":"Default",
+         "file":"timer.css"
+      },
+      {
+         "name":"Cyan background",
+         "file":"cyan.css"
+      }
+   ],
+   "attributes":[
+      {
+         "shortName":"heading",
+         "name":"Starting Time",
+         "type":"String",
+         "value":"Title"
+      }
+   ],
+   "guidances":[
+      {
+         "priority":"low",
+         "text":"You can edit or delete the heading",
+         "shortName":"heading"
+      }
+   ]
+}

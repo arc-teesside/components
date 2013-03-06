@@ -1,0 +1,28 @@
+#@[id]-table {
+	border-collapse: collapse;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: left;
+}
+
+#@[id]-table caption {
+	padding: 20px 10px 20px 10px;
+	background-color: #64A4D1;
+	border-collapse: collapse;
+	text-align: center;
+	border-right: 30px solid #fff;
+	border-left: 30px solid #fff;	
+}
+
+#@[id]-table tr td {
+	background-color: #AFCDE3;
+	border-right: 30px solid #fff;
+	border-left: 30px solid #fff;
+	padding: 10px;
+	color: #669;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+#@[id]-one {
+	text-align:center;
+}

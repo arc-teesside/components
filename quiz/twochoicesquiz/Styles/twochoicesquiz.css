@@ -1,0 +1,16 @@
+#@[id] {
+	position:relative;
+}
+
+#@[id]-tbl {
+	min-width:250px;
+	margin:auto;
+}
+
+#@[id]-tbl tr td {
+	width:25%;
+}
+
+#@[id]-iconR, #@[id]-iconW, #@[id]-iconCR, #@[id]-iconCW {
+	vertical-align:middle;
+}

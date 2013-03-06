@@ -1,0 +1,65 @@
+{
+	"id":"",
+	"className":"todoTable",
+	"name":"Table",
+	"description":"Table with dynamic rows.",
+	"category":"ToDo",
+	"icon":"",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Sarah Guadagno",
+			"email":"L1369039@live.tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"table.html",
+	"javascript":"table.js",
+	"stylesheet":"table.css",
+	"themes": [{
+			"name": "Default",
+			"file":"table.css"
+		}, {
+			"name": "Bordered",
+			"file": "bordered.css"
+		}, {
+			"name": "Black",
+			"file": "tableBlack.css"
+		}, {
+			"name": "Blue",
+			"file": "tableBlue.css"
+		}, {
+			"name": "Green",
+			"file": "tableGreen.css"
+		}, {
+			"name": "Purple",
+			"file": "tablePurple.css"
+	}],
+	"attributes":[
+		{
+			"shortName":"inputText",
+			"name":"Input Text",
+			"type":"String",
+			"input":true,
+			"required":false
+		}
+	],
+	"actions":[
+		{
+			"shortName":"addRowComplete",
+			"name":"Add Row"
+		},
+		{
+			"shortName":"deleteRow",
+			"name":"Delete last row"
+		}
+	],
+	"guidances":[
+		{
+			"priority":"low",
+			"text":"You might attached an input text.",
+			"shortName":"inputText"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+#@[id] {
+	width:@[blockWidth]px;
+	text-align:left;
+}
+
+#@[id]-content {
+	width:@[blockWidth]px;
+	height:@[blockHeight]px;
+	text-align:left;
+	border:1px solid #999999;
+	margin-bottom: 1px;
+	font-size: @[fontSize]px;
+	overflow:auto;
+}
+
+#@[id]-textbox {
+	width:221px;
+	text-align:left;
+}
+
+.defaultTextActive { color: #a1a1a1; font-style: italic; }

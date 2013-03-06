@@ -1,0 +1,35 @@
+{
+	"id": "",
+	"className": "colorpicker",
+	"name": "Color Picker",
+	"description": "A simple color picker",
+	"category": "Input",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/colorpicker.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organization": "ARC Teesside University"
+	}],
+	"html": "colorpicker.html",
+	"javascript": "colorpicker.js",
+	"stylesheet": "black.css",
+	"dependencies": [{
+		"name": "jquery-colorpicker"
+	}],
+	"themes": [{
+			"name": "Black",
+			"file": "black.css"
+		}, {
+			"name": "Light Grey",
+			"file": "white.css"
+	}],
+	"attributes": [{
+		"shortName": "selectedColor",
+		"name": "Selected Color",
+		"type": "String",
+		"output": true,
+		"value": "0000ff"
+	}]
+}

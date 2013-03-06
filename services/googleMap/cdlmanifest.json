@@ -1,0 +1,47 @@
+{
+	"id": "googlemap",
+	"className": "googlemap",
+	"name": "Google Map",
+	"description": "Map using Google Maps JavaScript API V3",
+	"category": "Services",
+	"placeHolder": "",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/googleMap.png",
+	"authors": [{
+		"name": "Geoffrey LEROUX",
+		"email": "l1369383@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"dependencies": [{
+			"name": "googlemapapi"
+	}],
+	"html": "map.html",
+	"javascript": "map.js",
+	"stylesheet": "map.css",
+	"attributes": [{
+		"shortName": "address",
+		"name": "Displayed Location",
+		"type": "String",
+		"input": true,
+		"required": true
+	}, {
+		"shortName": "width",
+		"name": "Width (px)",
+		"type": "Number",
+		"value": "200"
+	}, {
+		"shortName": "height",
+		"name": "Height (px)",
+		"type": "Number",
+		"value": "200"
+	}],
+	"actions": [{
+		"shortName": "codeAddress",
+		"name": "Search Address"
+	}],
+	"guidances": [{
+		"priority": "high",
+		"text": "The map needs an adress to look for",
+		"shortName": "address"
+	}]
+}

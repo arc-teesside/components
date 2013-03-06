@@ -1,0 +1,25 @@
+<div id="@[id]" class="component">
+	<div id="@[id]-slides">
+		<table>
+			<tr>
+				<td>
+					<a href="#" class="prev">
+						<img src="http://slidesjs.com/examples/standard/img/arrow-prev.png" width="24" height="43" alt="Arrow Previous">
+					</a>
+				</td>
+				<td>
+					<div class="slides_container">
+						@[loop!y=@[nbPage]]
+							<div id="@[id]-page@[!y]" class="placeholder"><!--@[@[id]-page@[!y]]-->&nbsp;</div>
+						@[end!y]
+					</div>
+				</td>
+				<td>
+					<a href="#" class="next">
+						<img src="http://slidesjs.com/examples/standard/img/arrow-next.png" width="24" height="43" alt="Arrow Next">
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+<div>

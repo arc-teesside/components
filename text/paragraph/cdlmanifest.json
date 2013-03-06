@@ -1,0 +1,45 @@
+{
+	"id":0,
+	"className":"paragraph",
+	"name":"Paragraph",
+	"description":"Text Paragraph",
+	"category":"Text",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/text.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"component.js",
+	"stylesheet":"component.css",
+	"themes": [{
+			"name": "Default",
+			"file":"component.css"
+		}, {
+			"name": "Bordered",
+			"file": "bordered.css"
+	}],
+	"attributes":[
+		{
+			"shortName":"text",
+			"name":"Text",
+			"type":"String",
+			"input":false,
+			"required":false,
+			"value":""
+		}
+	],
+	"actions":[],
+	"guidances":[
+		{
+			"priority":"low",
+			"text":"You might edit the displayed text.",
+			"shortName":"text"
+		}
+	]
+}

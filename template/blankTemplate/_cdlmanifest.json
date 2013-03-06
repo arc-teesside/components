@@ -1,0 +1,49 @@
+{
+   "id":"template",
+   "className":"blankTemplate",
+   "name":"Blank Template",
+   "description":"The template component for a blank Widget",
+   "category":"Template",
+   "icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/template.png",
+   "placeHolder":"content",
+   "authors":[
+      {
+         "name":"Steve Green",
+         "email":"s.j.green@tees.ac.uk",
+         "link":"http://arc.tees.ac.uk",
+         "organisation":"ARC Teesside University"
+      }
+   ],
+   "html":"template.html",
+   "javascript":"template.js",
+   "stylesheet":"template.css",
+   "themes":[
+		{
+			"name":"Default white background",
+			"file":"template.css"
+		},
+		{
+			"name":"Cyan background",
+			"file":"cyan.css"
+		},
+		{
+			"name":"Lemon background",
+			"file":"lemon.css"
+		}
+	],
+	"attributes":[
+		{
+			"shortName":"heading",
+			"name":"Heading",
+			"type":"String",
+			"value":"Title"
+		}
+	],
+	"guidances":[
+		{
+			"shortName":"heading",
+			"priority":"low",
+			"text":"You can edit the heading or set it to nothing"
+		}
+	]
+}

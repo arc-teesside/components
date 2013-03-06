@@ -1,0 +1,54 @@
+{
+	"id": "paging",
+	"className": "paging",
+	"name": "Paging (New)",
+	"description": "Paging layout component",
+	"category": "Layout",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/pagingIcon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name":"Franck Perrin",
+		"email":"f.perrin@tees.ac.uk",
+		"link":"http://arc.tees.ac.uk/",
+		"organisation":"Accessibility Research Centre"
+	}],
+	dependencies: [{
+			"name": "jquery"
+	}],
+	"html": "paging.html",
+	"javascript": "paging.js",
+	"stylesheet": "paging.css",
+	"themes":[{
+		"name": "Default",
+		"file": "paging.css"
+	}],
+	"attributes": [{
+		"shortName": "nbPage",
+		"name": "Nb Pages",
+		"type": "Number",
+		"required": true,
+		"value": "3"
+	}, {
+		"shortName": "width",
+		"name": "Width (px)",
+		"type": "Number",
+		"required": true,
+		"value": "300"
+	}, {
+		"shortName": "height",
+		"name": "Height (px)",
+		"type": "Number",
+		"required": true,
+		"value": "300"
+	}],
+	"actions":[
+		{
+			"shortName":"next",
+			"name":"Go to next page"
+		},
+		{
+			"shortName":"previous",
+			"name":"Go to previous page"
+		}
+	]
+}

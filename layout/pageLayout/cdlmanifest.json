@@ -1,0 +1,44 @@
+{
+	"id": "pagelayout",
+	"className": "pagelayout",
+	"name": "Paging",
+	"description": "Paging layout component",
+	"category": "Layout",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/iconPaging.png",
+	"placeHolder": "",
+	"authors": [{
+		"name":"Sarah Guadagno",
+		"email":"L1369039@live.tees.ac.uk",
+		"link":"http://arc.tees.ac.uk/",
+		"organisation":"Accessibility Research Centre"
+	}],
+	dependencies: [{
+			"name": "slidesjs"
+	}],
+	"html": "pageLayout.html",
+	"javascript": "pageLayout.js",
+	"stylesheet": "pageLayout.css",
+	"themes":[{
+		"name": "Default",
+		"file": "pageLayout.css"
+	}],
+	"attributes": [{
+		"shortName": "nbPage",
+		"name": "Nb Pages",
+		"type": "Number",
+		"required": true,
+		"value": "3"
+	}, {
+		"shortName": "width",
+		"name": "Width (px)",
+		"type": "Number",
+		"required": true,
+		"value": "300"
+	}, {
+		"shortName": "height",
+		"name": "Height (px)",
+		"type": "Number",
+		"required": true,
+		"value": "300"
+	}]
+}

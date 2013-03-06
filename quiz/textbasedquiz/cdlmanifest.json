@@ -1,0 +1,57 @@
+{
+	"id": '',
+	"className": "textbasedquiz",
+	"name": "Text Answer Quiz",
+	"description": "A text based answer questionnaire with two possible input",
+	"category": "Quiz",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/textbasedquizIcon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "textbasedquiz.html",
+	"javascript": "textbasedquiz.js",
+	"themes": [{
+			"name": "Default",
+			"file": "textbasedquiz.css"
+	}],
+	"attributes": [{
+		"shortName": "symbol",
+		"name": "Symbol",
+		"type": "String",
+		"required": false
+	}, {
+		"shortName": "width",
+		"name": "Symbol width (px)",
+		"type": "Number",
+		"required": false
+	}, {
+		"shortName": "question",
+		"name": "Question",
+		"type": "String",
+		"required": true
+	}, {
+		"shortName": "right1",
+		"name": "First answer",
+		"type": "String",
+		"required": true
+	}, {
+		"shortName": "right2",
+		"name": "Second answer",
+		"type": "String",
+		"required": true
+	}, {
+		"shortName": "btnText",
+		"name": "Button text",
+		"type": "String",
+		"required": false
+	}, {
+		"shortName": "disableOnCheck",
+		"name": "Disable on check",
+		"type": "Boolean",
+		"value": false
+	}]
+}

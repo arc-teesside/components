@@ -1,0 +1,8 @@
+#@[id] {
+	overflow:auto;
+	width:@[width]px;
+	height:@[height]px;
+	text-align:center;
+}
+
+	

@@ -1,0 +1,24 @@
+{
+	"id":"linebreak",
+	"className":"linebreak",
+	"name":"Line break",
+	"description":"Line Break Component",
+	"category":"Text",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/lineBreakIcon.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Steve Green",
+			"email":"s.j.green@tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"component.html",
+	"javascript":"",
+	"stylesheet":"",
+	"themes":[],
+	"attributes":[],
+	"actions":[],
+	"guidances":[]
+}

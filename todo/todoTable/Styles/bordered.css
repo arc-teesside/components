@@ -1,0 +1,22 @@
+#@[id]-table {
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+#@[id]-table caption {
+	text-align:center;
+}
+
+#@[id]-table tr td {
+	text-align:center;
+	display: table-cell;
+	margin: 0px;
+	padding: 2px 5px 2px 5px;
+	border-bottom: solid 1px #999;
+}
+
+#@[id]-one {
+	text-align:center;
+}
+
+	

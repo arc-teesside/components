@@ -1,0 +1,7 @@
+#@[id] {
+	position:relative;
+}
+
+#@[id]-tbl tr td {
+	width:25%;
+}

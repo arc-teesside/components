@@ -1,0 +1,28 @@
+@[id]-table {
+	
+}
+
+@[id]-caption {
+	border-collapse:collapse;
+	text-align:center;
+	border: 1px solid black;	
+}
+
+@[id]-table, td {
+	text-align:center;
+	border: 1px solid black;
+}
+
+#@[id]-one, #@[id]-three {
+	text-align:center;
+}
+
+#@[id]-three {
+	position:fixed;
+	left:280px;
+	background-image:url(delete.png);
+	background-repeat:no-repeat;
+	height:17.5px;
+	width:17.5px;
+}
+	

@@ -1,0 +1,53 @@
+{
+	"id":"grid",
+	"className":"grid",
+	"name":"Grid",
+	"description":"Simple grad using a table layout",
+	"category":"Layout",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/table.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name": "Steve Green",
+			"email": "s.j.green@tees.ac.uk",
+			"link": "http://arc.tees.ac.uk",
+			"organisation": "ARC Teesside University"
+		}
+	],
+	"html":"component.html",
+	"javascript":"",
+	"stylesheet":"table.css",
+	"themes":[{
+		"name": "Default",
+		"file":"table.css"
+	}, {
+		"name": "Black Borders",
+		"file": "borders.css"
+	}],
+	"attributes":[
+		{
+			"shortName": "rows",
+			"name": "Nb Rows",
+			"type": "Number",
+			"required": true,
+			"value": 3
+		},{
+			"shortName": "columns",
+			"name": "Nb Columns",
+			"type": "Number",
+			"required": true,
+			"value": 2
+		}
+	],
+	"guidances":[
+		{
+			"priority":"medium",
+			"text":"You can change the number of grid rows.",
+			"shortName":"rows"
+		},{
+			"priority":"medium",
+			"text":"You can change the number of grid columns.",
+			"shortName":"columns"
+		}
+	]
+}

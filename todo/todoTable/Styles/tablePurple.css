@@ -1,0 +1,29 @@
+#@[id]-table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: center;
+	border-collapse: collapse;
+	border-top: 7px solid #9baff1;
+	border-bottom: 7px solid #9baff1;
+}
+
+#@[id]-table caption {
+	padding: 10px;
+	border-collapse: collapse;
+	text-align: center;
+	border-right: 1px solid #aabcfe;
+	border-left: 1px solid #aabcfe;
+	border-top: 1px solid #aabcfe;
+}
+
+#@[id]-table tr td {
+	background: #e8edff; 
+	border-right: 1px solid #aabcfe;
+	border-left: 1px solid #aabcfe;
+	padding: 8px;
+	color: #669;
+}
+
+#@[id]-one {
+	text-align:center;
+}

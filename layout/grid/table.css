@@ -1,0 +1,13 @@
+
+/* analogClock CSS Document */
+
+#@[id] {
+	position: relative;
+	width: 100%;
+}
+
+
+#@[id] tr td {
+	position: relative;
+	width: 49%;
+}

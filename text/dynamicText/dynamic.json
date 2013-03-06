@@ -1,0 +1,29 @@
+{
+	"id": "",
+	"className": "dynamicText",
+	"name": "Dynamic text",
+	"description": "Dynamic text",
+	"category": "Text",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/text.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organization": "ARC Teesside University"
+	}],
+	"html": "dynamic.html",
+	"javascript": "dynamic.js",
+	"attributes": [{
+		"shortName": "inputText",
+		"name": "Input text",
+		"type": "String",
+		"input": true,
+		"required": true
+	}],
+	"guidances": [{
+		"priority": "medium",
+		"text": "A dynamic text should be linked to another component",
+		"shortName": "inputText"
+	}]
+}

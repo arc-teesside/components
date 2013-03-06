@@ -1,0 +1,47 @@
+{
+	"id":"",
+	"className":"digitalClock",
+	"name":"Digital Clock",
+	"description":"Digital clock",
+	"category":"Clock",
+	"icon":"temp/textClock.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"",
+			"email":"",
+			"link":"",
+			"organisation":""
+		}
+	],
+	"html":"digital.html",
+	"javascript":"digital.js",
+	"stylesheet":"digital.css",
+	"dependencies": [{"name":"jquery-countdown"}]
+	"attributes":[
+		{
+			"shortName":"startTime",
+			"name":"Starting Time",
+			"type":"Number",
+			"input":true,
+			"required":true
+		}
+	],
+	"actions":[
+		{
+			"shortName":"launchCountdown",
+			"name":"launch Countdown"
+		},
+		{
+			"shortName":"resetClock",
+			"name":"Reset clock"
+		}
+	],
+	"guidances":[
+		{
+			"priority":"high",
+			"text":"The clock needs a starting time",
+			shortName:"startTime"
+		}
+	]
+}

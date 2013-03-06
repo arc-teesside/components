@@ -1,0 +1,47 @@
+/* CSS Doc */
+
+.slides_container, .pagination {
+	display: block;
+}
+
+.prev, .next {
+	width: 24px;
+	height: 43px;
+	display:block;
+}
+
+.prev {
+}
+
+.next {
+}
+
+#@[id]-slides .slides_container {
+    width: @[width]px;
+    height: @[height]px;
+    border: 1px solid #ccc;
+}   
+#@[id]-slides .slides_container div {
+    width: @[width]px;
+    height: @[height]px;
+    padding: 1em;
+    display:block;
+}
+
+.pagination li {
+	list-style: none;
+}
+
+.pagination li a {
+	display: block;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(http://slidesjs.com/examples/standard/img/pagination.png);
+	float: left;
+	overflow: hidden;
+}
+
+.pagination li.current a {
+	background-position: 0 -12px;
+}

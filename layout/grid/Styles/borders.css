@@ -1,0 +1,13 @@
+
+/* analogClock CSS Document */
+
+#@[id] {
+	
+	width: 100%;
+}
+
+#@[id] tr td {
+
+	width: calc(100%/@[columns]);
+	border: solid black 1px;
+}

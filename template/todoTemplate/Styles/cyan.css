@@ -1,0 +1,15 @@
+
+/* timerTemplate CSS Document */
+
+.todoTemplate {
+	width: 100%;
+	height: 100%;
+	margin: 0 0 0 0;
+	background: cyan;
+}
+
+
+p {
+	text-align: center; 
+	padding: 4px 0 0 0;
+}

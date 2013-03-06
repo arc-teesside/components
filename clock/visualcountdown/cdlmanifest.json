@@ -1,0 +1,78 @@
+{
+	"id":"",
+	"className":"visualcountdown",
+	"name":"Visual Countdown",
+	"description":"Visual Countdown",
+	"category":"Clock",
+	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/visualcountdown_icon.png",
+	"placeHolder":"",
+	"authors":[
+		{
+			"name":"Geoffrey Leroux",
+			"email":"L1369383@live.tees.ac.uk",
+			"link":"http://arc.tees.ac.uk/",
+			"organisation":"Accessibility Research Centre"
+		}
+	],
+	"html":"visualcountdown.html",
+	"javascript":"visualcountdown.js",
+	"stylesheet":"visualcountdown.css",
+	"dependencies": [{
+		"name": "tween"
+	}],
+	"attributes":[
+		{
+			"shortName":"startTime",
+			"name":"Starting Time",
+			"type":"Number",
+			"input":true,
+			"required":true
+		}, {
+			"shortName":"color",
+			"name":"Layer color",
+			"type":"String",
+			"input": true
+		}, {
+			"shortName":"opacity",
+			"name":"Layer opacity (0-1)",
+			"type":"Number"
+		}, {
+			"shortName": "playAlarm",
+			"name": "Play alarm sound",
+			"type": "Boolean",
+			"value": true
+		}, {
+			"shortName": "alarmPlayTime",
+			"name": "Alarm buzz time (sec)",
+			"type": "Number",
+			"value": 1
+		}, {
+			"shortName": "width",
+			"name": "Width (px)",
+			"type": "Number",
+			"value": 200
+		}, {
+			"shortName": "clockwise",
+			"name": "Run clockwise",
+			"type": "Boolean",
+			"value": false
+		}
+	],
+	"actions":[
+		{
+			"shortName":"startClock",
+			"name":"Start countdown"
+		},
+		{
+			"shortName":"resetClock",
+			"name":"Reset clock"
+		}
+	],
+	"guidances":[
+		{
+			"priority":"high",
+			"text":"The clock needs a starting time",
+			"shortName":"startTime"
+		}
+	]
+}
