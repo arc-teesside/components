@@ -33,6 +33,11 @@
 			"type":"String",
 			"input": true
 		}, {
+			"shortName":"textColor",
+			"name":"Text color",
+			"type":"String",
+			"input": true
+		}, {
 			"shortName":"opacity",
 			"name":"Layer opacity (0-1)",
 			"type":"Number"
