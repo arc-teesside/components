@@ -30,7 +30,7 @@
 		{
 			"shortName":"src",
 			"name":"Source",
-			"type":"String",
+			"type":"Sound",
 			"input":false,
 			"required":true,
 			"value":"ring",

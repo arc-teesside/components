@@ -16,7 +16,7 @@
 	"attributes": [{
 		"shortName": "src",
 		"name": "URL",
-		"type": "String",
+		"type": "Image",
 		"required": true,
 		"value": "http://arc.tees.ac.uk/WIDEST/Media/defaultImage.jpg"
 	}, {

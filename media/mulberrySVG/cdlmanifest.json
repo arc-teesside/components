@@ -52,6 +52,10 @@
 			"input":false,
 			"required":true,
 			"value":64
+		}, { 
+			"shortName": "action",
+			"name": "On click Action",
+			"type": "Action"
 		}
 	],
 	"actions":[],
