@@ -372,6 +372,11 @@
 			"type":"String",
 			"input": true
 		}, {
+			"shortName":"textColor",
+			"name":"Text color",
+			"type":"String",
+			"input": true
+		}, {
 			"shortName":"opacity",
 			"name":"Layer opacity (0-1)",
 			"type":"Number"
@@ -988,7 +993,7 @@
 	"attributes": [{
 		"shortName": "src",
 		"name": "URL",
-		"type": "String",
+		"type": "Image",
 		"required": true,
 		"value": "http://arc.tees.ac.uk/WIDEST/Media/defaultImage.jpg"
 	}, {
@@ -1068,6 +1073,10 @@
 			"input":false,
 			"required":true,
 			"value":64
+		}, { 
+			"shortName": "action",
+			"name": "On click Action",
+			"type": "Action"
 		}
 	],
 	"actions":[],
@@ -1120,7 +1129,7 @@
 		{
 			"shortName":"src",
 			"name":"Source",
-			"type":"String",
+			"type":"Sound",
 			"input":false,
 			"required":true,
 			"value":"ring",
