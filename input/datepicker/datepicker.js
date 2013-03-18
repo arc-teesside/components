@@ -2,7 +2,7 @@ var datepicker = function (ID) {
 
     this.id = ID;
 	this.selectedDate = '';
-	this.attach2Textbox = false;
+	this.attached2Texbox = false;
 	this.yearAsMenu = false;
 	this.showWeekNumber= false;
 	this.displayMultiple = false;
@@ -14,10 +14,13 @@ var datepicker = function (ID) {
 		
 		var target = '#'+_this.id;
 		
-		if(_this.attach2Textbox) {
+		if(_this.attached2Texbox) {
 			var dateInput = document.createElement('input');
 			dateInput.id = _this.id+'-input';
+			dateInput.type = "text";
 			document.getElementById(_this.id).appendChild(dateInput);
+			document.getElementById(_this.id).style.width = 'auto';
+			document.getElementById(_this.id).style.height = 'auto';
 			target += '-input'; 
 		}
 		

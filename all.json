@@ -551,6 +551,17 @@
 	}],
 	"html": "datepicker.html",
 	"javascript": "datepicker.js",
+	"stylesheet": "datepicker.css",
+	"themes": [{
+			"name": "Default",
+			"file": "datepicker.css"
+	}, {
+			"name": "Small print",
+			"file": "small.css"
+	}, {
+			"name": "Large print",
+			"file": "Large.css"
+	}],
 	"dependencies": [
 		"jquery-ui"
 	],

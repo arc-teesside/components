@@ -11,6 +11,7 @@
 		"organization": "ARC Teesside University"
 	}],
 	"html": "button.html",
+	"stylesheet": "button.css",
 	"themes": [{
 			"name": "Default",
 			"file": "button.css"
