@@ -368,7 +368,7 @@
 			"required":true
 		}, {
 			"shortName":"color",
-			"name":"Layer color",
+			"name":"Mask color",
 			"type":"String",
 			"input": true
 		}, {
@@ -378,7 +378,7 @@
 			"input": true
 		}, {
 			"shortName":"opacity",
-			"name":"Layer opacity (0-1)",
+			"name":"Mask opacity (0-1)",
 			"type":"Number"
 		}, {
 			"shortName": "playAlarm",
@@ -432,6 +432,7 @@
 		"organization": "ARC Teesside University"
 	}],
 	"html": "button.html",
+	"stylesheet": "button.css",
 	"themes": [{
 			"name": "Default",
 			"file": "button.css"
@@ -726,52 +727,9 @@
 		}
 	]
 },{
-	"id": "pagelayout",
-	"className": "pagelayout",
-	"name": "Paging",
-	"description": "Paging layout component",
-	"category": "Layout",
-	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/iconPaging.png",
-	"placeHolder": "",
-	"authors": [{
-		"name":"Sarah Guadagno",
-		"email":"L1369039@live.tees.ac.uk",
-		"link":"http://arc.tees.ac.uk/",
-		"organisation":"Accessibility Research Centre"
-	}],
-	dependencies: [{
-			"name": "slidesjs"
-	}],
-	"html": "pageLayout.html",
-	"javascript": "pageLayout.js",
-	"stylesheet": "pageLayout.css",
-	"themes":[{
-		"name": "Default",
-		"file": "pageLayout.css"
-	}],
-	"attributes": [{
-		"shortName": "nbPage",
-		"name": "Nb Pages",
-		"type": "Number",
-		"required": true,
-		"value": "3"
-	}, {
-		"shortName": "width",
-		"name": "Width (px)",
-		"type": "Number",
-		"required": true,
-		"value": "300"
-	}, {
-		"shortName": "height",
-		"name": "Height (px)",
-		"type": "Number",
-		"required": true,
-		"value": "300"
-	}]
-},{
 	"id": "paging",
 	"className": "paging",
-	"name": "Paging (New)",
+	"name": "Paging",
 	"description": "Paging layout component",
 	"category": "Layout",
 	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/pagingIcon.png",
@@ -893,6 +851,9 @@
 			"shortName": "hide",
 			"name": "Hide content",
 			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/pauseIcon.png"
+		},{
+			"shortName": "toggle",
+			"name": "Toggle content"
 		},{
 			"shortName": "collapse",
 			"name": "Collapse panel",
@@ -1242,14 +1203,17 @@
 			"organisation":"Accessibility Research Centre"
 		}
 	],
-	"html":"component.html",
-	"javascript":"",
-	"stylesheet":"",
-	"themes": [],
+	"html":"youtube.html",
+	"javascript":"youtube.js",
+	"stylesheet":"youtube.css",
+	"themes": [{
+		"name": "Default",
+		"file":"youtube.css"
+	}],
 	"attributes":[
 		{
-			"shortName":"videoId",
-			"name":"Video ID",
+			"shortName":"url",
+			"name":"URL",
 			"type":"String",
 			"input":false,
 			"required":true
@@ -1275,8 +1239,8 @@
 	"guidances":[
 		{
 			"priority":"high",
-			"text":"Enter your YouTube video's ID",
-			"shortName":"videoId"
+			"text":"Enter your YouTube video's URL",
+			"shortName":"url"
 		}
 	]
 },{

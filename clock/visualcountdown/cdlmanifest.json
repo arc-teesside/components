@@ -29,7 +29,7 @@
 			"required":true
 		}, {
 			"shortName":"color",
-			"name":"Layer color",
+			"name":"Mask color",
 			"type":"String",
 			"input": true
 		}, {
@@ -39,7 +39,7 @@
 			"input": true
 		}, {
 			"shortName":"opacity",
-			"name":"Layer opacity (0-1)",
+			"name":"Mask opacity (0-1)",
 			"type":"Number"
 		}, {
 			"shortName": "playAlarm",

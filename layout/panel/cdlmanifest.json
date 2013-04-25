@@ -71,6 +71,9 @@
 			"name": "Hide content",
 			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/pauseIcon.png"
 		},{
+			"shortName": "toggle",
+			"name": "Toggle content"
+		},{
 			"shortName": "collapse",
 			"name": "Collapse panel",
 			"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/stopIcon.png"

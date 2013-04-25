@@ -65,6 +65,7 @@ var visualcountdown = function (ID) {
 					_this.ctx.stroke();
 					_this.ctx.textBaseline = "top";
 					_this.ctx.font = "bold 1.4em arial";
+					_this.ctx.globalAlpha = 1;
 					_this.ctx.fillStyle = _this.textColor;
 					_this.ctx.fillText(_this.startTime-_this.count, (_this.width/2)-7, (_this.width/2)+10);
 					_this.ctx.font = "1em arial";
@@ -87,6 +88,7 @@ var visualcountdown = function (ID) {
         _this.ctx.clearRect(0,0,_this.width,_this.width);
 		_this.ctx.textBaseline = "top";
 		_this.ctx.font = "bold 1.4em arial red";
+		_this.ctx.globalAlpha = 1;
 		_this.ctx.fillStyle = _this.textColor;
 		_this.ctx.fillText(_this.startTime, (_this.width/2)-7, (_this.width/2)+10);
 		_this.ctx.font = "1em arial";

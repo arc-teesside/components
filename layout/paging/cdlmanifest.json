@@ -1,7 +1,7 @@
 {
 	"id": "paging",
 	"className": "paging",
-	"name": "Paging (New)",
+	"name": "Paging",
 	"description": "Paging layout component",
 	"category": "Layout",
 	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/pagingIcon.png",

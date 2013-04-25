@@ -14,14 +14,17 @@
 			"organisation":"Accessibility Research Centre"
 		}
 	],
-	"html":"component.html",
-	"javascript":"",
-	"stylesheet":"",
-	"themes": [],
+	"html":"youtube.html",
+	"javascript":"youtube.js",
+	"stylesheet":"youtube.css",
+	"themes": [{
+		"name": "Default",
+		"file":"youtube.css"
+	}],
 	"attributes":[
 		{
-			"shortName":"videoId",
-			"name":"Video ID",
+			"shortName":"url",
+			"name":"URL",
 			"type":"String",
 			"input":false,
 			"required":true
@@ -47,8 +50,8 @@
 	"guidances":[
 		{
 			"priority":"high",
-			"text":"Enter your YouTube video's ID",
-			"shortName":"videoId"
+			"text":"Enter your YouTube video's URL",
+			"shortName":"url"
 		}
 	]
 }
