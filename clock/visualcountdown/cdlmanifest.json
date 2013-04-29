@@ -16,7 +16,38 @@
 	],
 	"html":"visualcountdown.html",
 	"javascript":"visualcountdown.js",
-	"stylesheet":"visualcountdown.css",
+	"stylesheet":"blue.css",
+	"themes": [{
+		"name": "BlackOnWhite",
+		"file":"blackonwhite.css"
+	},{
+		"name": "Blue",
+		"file":"blue.css"
+	},{
+		"name": "BlackOnWhite",
+		"file":"blackonwhite.css"
+	},{
+		"name": "Cyan",
+		"file":"cyan.css"
+	},{
+		"name": "Orange",
+		"file":"orange.css"
+	},{
+		"name": "Pink",
+		"file":"pink.css"
+	},{
+		"name": "Purple",
+		"file":"purple.css"
+	},{
+		"name": "Red",
+		"file":"red.css"
+	},{
+		"name": "WhiteOnBlack",
+		"file":"whiteonblack.css"
+	},{
+		"name": "Yellow",
+		"file":"yellow.css"
+	}],
 	"dependencies": [{
 		"name": "tween"
 	}],

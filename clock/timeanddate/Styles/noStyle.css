@@ -1,0 +1,14 @@
+/* SAMPLE CSS STYLES FOR JQUERY CLOCK PLUGIN */
+#@[id]-display.jqclock {
+	float:left;
+	text-align:center;
+	clear:both;
+}
+#@[id]-display .clockdate { 
+	font-size: 18px;
+	display: block;
+}
+#@[id]-display .clocktime {
+	font-size: 18px;
+	display: block;
+}

@@ -1,0 +1,47 @@
+{
+	"id": 1,
+	"className": "timeanddate",
+	"name": "Current time & date",
+	"description": "Very simple time and date display component",
+	"category": "Clock",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/timeanddateIcon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "timeanddate.html",
+	"javascript": "timeanddate.js",
+	"stylesheet": "noStyle.css",
+	"themes": [{
+			"name": "Default",
+			"file":"default.css"
+		}, {
+			"name": "No Style",
+			"file": "noStyle.css"
+		}, {
+			"name": "No Style Inline",
+			"file": "noStyleInline.css"
+	}],
+	"dependencies": [{
+		"name": "jqClock"
+	}],
+	"attributes": [{
+		"shortName": "calendar",
+		"name": "Display date",
+		"type": "Boolean",
+		"value": true
+	}, {
+		"shortName": "format",
+		"name": "Time format",
+		"type": "String",
+		"value":"24-hours",
+		"choices":[{"name": "24-hours", "str":"24-hours"}, {"name": "12-hours", "str":"12-hours"}]
+	}],
+	"guidances": [{
+			"priority": "Low",
+			"text": "There are a few different thems you can choose from in the Style panel",
+	}]
+}

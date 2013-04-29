@@ -55,6 +55,11 @@
 			"type":"String",
 			"input":true,
 			"required":true
+		}, {
+			"shortName": "highlightLastFive",
+			"name": "Highlight last 5 secs",
+			"type": "Boolean",
+			"value": false
 		}
 	],
 	"actions": [{

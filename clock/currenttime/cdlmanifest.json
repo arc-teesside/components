@@ -1,0 +1,35 @@
+{
+	"id": 6,
+	"className": "currenttime",
+	"name": "Current Time",
+	"description": "Fancy Current Time widget using CSS3 animations",
+	"category": "Clock",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/currenttimeicon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "currenttime.html",
+	"javascript": "currenttime.js",
+	"stylesheet": "Small.css",
+	"dependencies": [{
+		"name": "tzineClock"
+	}],
+	"themes": [{
+		"name": "Small",
+		"file":"Small.css"
+	}, {
+		"name": "Medium",
+		"file":"Medium.css"
+	}, {
+		"name": "Large",
+		"file":"Large.css"
+	}],
+	"guidances": [{
+		"priority": "low",
+		"text": "Three different sizes are available in the themes"
+	}]
+}

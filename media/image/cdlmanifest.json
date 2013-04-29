@@ -24,6 +24,11 @@
 		"name": "Alternative text",
 		"type": "String"
 	}, {
+		"shortName": "target",
+		"name": "Target",
+		"type": "String",
+		"choices": [{"name": "New window", "str": "_blank"}]
+	}, {
 		"shortName": "width",
 		"name": "Width (px)",
 		"type": "Number",

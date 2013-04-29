@@ -1,0 +1,24 @@
+#@[id] {
+	width:@[width]px;
+	height:@[width]px;
+}
+
+#@[id]-bg {
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 1;
+	width:@[width]px;
+	height:@[width]px;
+}
+
+#@[id]-sec{
+    z-index: 9;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+
+#@[id]-testaudio{
+    visibility: hidden;
+}
