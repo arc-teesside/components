@@ -16,11 +16,16 @@ body{
     height:64px;
     border:1px solid #111111;
     width:192px;
+	background-color:#252525;
+	color:#F5F5F5;
+	-webkit-box-sizing: content-box !important; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: content-box !important;    /* Firefox, other Gecko */
+	box-sizing: content-box !important; 
 }
 
 .clock{
 	/* The .clock div. Created dynamically by jQuery */
-	background-color:#252525;
+	/*background-color:#252525;*/
 	height:64px;
 	width:64px;
 	position:relative;
@@ -45,7 +50,6 @@ body{
 .clock .bg, .clock .front{
 	width:32px;
 	height:64px;
-	background-color:#252525;
 	position:absolute;
 	top:0;
 }
@@ -56,7 +60,6 @@ body{
 	width:64px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	z-index:20;
-	color:#F5F5F5;
 	font-size:18px;
 	text-align:center;
 	top:21px;
@@ -71,16 +74,16 @@ body{
 .clock .bg.left{ left:0; }
 
 /* Individual styles for each color: */
-.orange .bg.left{ background:url(Small/bg_orangeSmall.png) no-repeat left top; }
-.green .bg.left{ background:url(Small/bg_greenSmall.png) no-repeat left top; }
-.blue .bg.left{	background:url(Small/bg_blueSmall.png) no-repeat left top; }
+.orange .bg.left{ background:url(@[URL:components]/clock/currenttime/Styles/Small/bg_orangeSmall.png) no-repeat left top; }
+.green .bg.left{ background:url(@[URL:components]/clock/currenttime/Styles/Small/bg_greenSmall.png) no-repeat left top; }
+.blue .bg.left{	background:url(@[URL:components]/clock/currenttime/Styles/Small/bg_blueSmall.png) no-repeat left top; }
 
 /* The right part of the background: */
 .clock .bg.right{ left:32px; }
 
-.orange .bg.right{ background:url(Small/bg_orangeSmall.png) no-repeat right top; }
-.green .bg.right{ background:url(Small/bg_greenSmall.png) no-repeat right top; }
-.blue .bg.right{ background:url(Small/bg_blueSmall.png) no-repeat right top; }
+.orange .bg.right{ background:url(@[URL:components]/clock/currenttime/Styles/Small/bg_orangeSmall.png) no-repeat right top; }
+.green .bg.right{ background:url(@[URL:components]/clock/currenttime/Styles/Small/bg_greenSmall.png) no-repeat right top; }
+.blue .bg.right{ background:url(@[URL:components]/clock/currenttime/Styles/Small/bg_blueSmall.png) no-repeat right top; }
 
 
 .clock .front.left{

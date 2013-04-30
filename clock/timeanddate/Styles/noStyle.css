@@ -1,4 +1,11 @@
 /* SAMPLE CSS STYLES FOR JQUERY CLOCK PLUGIN */
+#@[id] {
+	display:inline-block;
+	-webkit-box-sizing: content-box !important; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: content-box !important;    /* Firefox, other Gecko */
+	box-sizing: content-box !important; 
+}
+
 #@[id]-display.jqclock {
 	float:left;
 	text-align:center;

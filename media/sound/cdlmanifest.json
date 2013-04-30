@@ -33,8 +33,7 @@
 			"type":"Sound",
 			"input":false,
 			"required":true,
-			"value":"ring",
-			"choices": [{"str": "alarm"}, {"str": "android"}, {"str": "ring"}, {"str": "starwars"} ]
+			"value":"http://arc.tees.ac.uk/WIDEST/Media/sound/android.mp3"
 		},
 		{
 			"shortName":"controls",

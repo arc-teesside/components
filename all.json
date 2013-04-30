@@ -112,6 +112,40 @@
 			"shortName": "startTime"
 	}]
 },{
+	"id": "",
+	"className": "currenttime",
+	"name": "Current Time",
+	"description": "Fancy Current Time widget using CSS3 animations",
+	"category": "Clock",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/currenttimeicon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "currenttime.html",
+	"javascript": "currenttime.js",
+	"stylesheet": "Small.css",
+	"dependencies": [{
+		"name": "tzineClock"
+	}],
+	"themes": [{
+		"name": "Small",
+		"file":"Small.css"
+	}, {
+		"name": "Medium",
+		"file":"Medium.css"
+	}, {
+		"name": "Large",
+		"file":"Large.css"
+	}],
+	"guidances": [{
+		"priority": "low",
+		"text": "Three different sizes are available in the themes"
+	}]
+},{
 	"id":"",
 	"className":"deadline",
 	"name":"Deadline",
@@ -168,6 +202,11 @@
 			"type":"String",
 			"input":true,
 			"required":true
+		}, {
+			"shortName": "highlightLastFive",
+			"name": "Highlight last 5 secs",
+			"type": "Boolean",
+			"value": false
 		}
 	],
 	"actions": [{
@@ -338,6 +377,52 @@
 			"shortName": "startTime"
 	}]
 },{
+	"id": "",
+	"className": "timeanddate",
+	"name": "Current time & date",
+	"description": "Very simple time and date display component",
+	"category": "Clock",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/timeanddateIcon.png",
+	"placeHolder": "",
+	"authors": [{
+		"name": "Franck Perrin",
+		"email": "f.perrin@tees.ac.uk",
+		"link": "http://arc.tees.ac.uk",
+		"organisation": "ARC Teesside University"
+	}],
+	"html": "timeanddate.html",
+	"javascript": "timeanddate.js",
+	"stylesheet": "noStyle.css",
+	"themes": [{
+			"name": "Default",
+			"file":"default.css"
+		}, {
+			"name": "No Style",
+			"file": "noStyle.css"
+		}, {
+			"name": "No Style Inline",
+			"file": "noStyleInline.css"
+	}],
+	"dependencies": [{
+		"name": "jqClock"
+	}],
+	"attributes": [{
+		"shortName": "calendar",
+		"name": "Display date",
+		"type": "Boolean",
+		"value": true
+	}, {
+		"shortName": "format",
+		"name": "Time format",
+		"type": "String",
+		"value":"24-hours",
+		"choices":[{"name": "24-hours", "str":"24-hours"}, {"name": "12-hours", "str":"12-hours"}]
+	}],
+	"guidances": [{
+			"priority": "Low",
+			"text": "There are a few different thems you can choose from in the Style panel",
+	}]
+},{
 	"id":"",
 	"className":"visualcountdown",
 	"name":"Visual Countdown",
@@ -355,7 +440,35 @@
 	],
 	"html":"visualcountdown.html",
 	"javascript":"visualcountdown.js",
-	"stylesheet":"visualcountdown.css",
+	"stylesheet":"blue.css",
+	"themes": [{
+		"name": "BlackOnWhite",
+		"file":"blackonwhite.css"
+	},{
+		"name": "Blue",
+		"file":"blue.css"
+	},{
+		"name": "Cyan",
+		"file":"cyan.css"
+	},{
+		"name": "Orange",
+		"file":"orange.css"
+	},{
+		"name": "Pink",
+		"file":"pink.css"
+	},{
+		"name": "Purple",
+		"file":"purple.css"
+	},{
+		"name": "Red",
+		"file":"red.css"
+	},{
+		"name": "WhiteOnBlack",
+		"file":"whiteonblack.css"
+	},{
+		"name": "Yellow",
+		"file":"yellow.css"
+	}],
 	"dependencies": [{
 		"name": "tween"
 	}],
@@ -973,6 +1086,11 @@
 		"name": "Alternative text",
 		"type": "String"
 	}, {
+		"shortName": "target",
+		"name": "Target",
+		"type": "String",
+		"choices": [{"name": "New window", "str": "_blank"}]
+	}, {
 		"shortName": "width",
 		"name": "Width (px)",
 		"type": "Number",
@@ -1104,8 +1222,7 @@
 			"type":"Sound",
 			"input":false,
 			"required":true,
-			"value":"ring",
-			"choices": [{"str": "alarm"}, {"str": "android"}, {"str": "ring"}, {"str": "starwars"} ]
+			"value":"http://arc.tees.ac.uk/WIDEST/Media/sound/android.mp3"
 		},
 		{
 			"shortName":"controls",
@@ -1643,6 +1760,11 @@
 		"name": "URL",
 		"type": "String",
 		"required": true
+	}, {
+		"shortName": "target",
+		"name": "Target",
+		"type": "String",
+		"choices": [{"name": "New window", "str": "_blank"}]
 	}],
 	"guidances": [{
 		"priority": "high",

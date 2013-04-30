@@ -24,9 +24,9 @@ var deadline = function (ID) {
 		if(_this.displayText)
 			$(ID + "-deadlineText").text('Deadline: '+newYear.toUTCString().substr(0,22));
 		$(ID + "-deadlineCountdown").countdown('destroy');
-		$(ID + "-deadlineCountdown").countdown({until: newYear});
-		if(_this.highlightLastFive)
-			$(ID + "-deadlineCountdown").countdown('option', 'onTick', _this.highlightLast5)
+		$(ID + "-deadlineCountdown").countdown({until: newYear, onTick: _this.highlightLast5});
+		/*if(_this.highlightLastFive)
+			$(ID + "-deadlineCountdown").countdown('option', 'onTick', _this.highlightLast5);*/
 	};
 	
 	this.startCountdown = function() {
@@ -44,11 +44,11 @@ var deadline = function (ID) {
 		if(_this.displayText)
 			$(ID + "-deadlineText").text('Deadline: '+newYear.toUTCString().substr(0,22));
 		$(ID + "-deadlineCountdown").countdown('destroy');
-		$(ID + "-deadlineCountdown").countdown({until: newYear});
+		$(ID + "-deadlineCountdown").countdown({until: newYear, onTick: _this.highlightLast5});
 	};
     
 	this.highlightLast5 = function(periods) { 
-		if ($.countdown.periodsToSeconds(periods) == 5) { 
+		if ($.countdown.periodsToSeconds(periods) == 5 && _this.highlightLastFive) { 
 			$(this).addClass('highlight'); 
 		} 
 	} 
