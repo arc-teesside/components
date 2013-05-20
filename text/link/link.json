@@ -31,6 +31,6 @@
 	}, {
 		"priority": "high",
 		"text": "A link requires a URL",
-		"shortName": "text"
+		"shortName": "url"
 	}]
 }

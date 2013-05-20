@@ -21,6 +21,15 @@ var paging = function (ID) {
 			
 			$("#"+_this.id+"-activePage").html(_this.activePage);
 			
+			var hashNum = top.window.location.hash.split('#')[1];
+			
+			console.log('##### window.location.hash', top.window.location);
+			if(_this.isNumber(hashNum)) {
+				if(0 < hashNum <= _this.nbPage) {
+					_this.goToPage(hashNum);
+				}
+			}
+			
 	}
 	
 	this.next = function() {
@@ -64,11 +73,17 @@ var paging = function (ID) {
 			
 			_this.activePage = pageNumber;
 			
+			top.window.location.hash = pageNumber;
+			
 			$("#"+_this.id+"-page"+_this.activePage).removeClass("inactivePage");
 			$("#"+_this.id+"-page"+_this.activePage).addClass("activePage");
 			$("#"+_this.id+"-activePage").html(_this.activePage);
 		}
 		
+	}
+	
+	this.isNumber = function(n) {
+		return !isNaN(parseFloat(n)) && isFinite(n);
 	}
     
 }
