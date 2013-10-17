@@ -1,3 +1,8 @@
+#@[id]{
+    width:@[width]px;
+    height:@[height]px; 
+}
+
 #@[id]_canvas{
     width:@[width]px;
     height:@[height]px; 
