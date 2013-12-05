@@ -175,7 +175,8 @@ var matchPairs = function (ID) {
 				cell.style.height = _this.imgHeight+'px';
 				var lnk = document.createElement("a");
 				lnk.id = _this.id +"-lnk-"+ind;
-				lnk.onclick=_this.reveal;
+				if(top.window.editable != true)
+					lnk.onclick=_this.reveal;
 				
 				var img = document.createElement("img");
 				img.id = _this.id +"-img-"+ind;
@@ -232,6 +233,10 @@ var matchPairs = function (ID) {
 					} else {
 						console.log('nofade');
 						_this.firstClick = false;
+						if(_this.arMatches.length == _this.arImg.length) { // end of game
+							alert('Well done');
+							_this.resetGame();
+						}
 					}
 				} else {
 					document.getElementById(_this.id+'-img-'+index).src = _this.arTile[index];

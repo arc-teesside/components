@@ -4,7 +4,7 @@
 	"name": "Matching Pairs",
 	"description": "A simple image pairing game",
 	"category": "Quiz",
-	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/timeanddateIcon.png",
+	"icon": "http://arc.tees.ac.uk/WIDEST/Widget/icons/matchpairs-icon.jpg",
 	"placeHolder": "",
 	"authors": [{
 		"name": "Franck Perrin",
@@ -14,8 +14,11 @@
 	}],
 	"html": "matchpairs.html",
 	"javascript": "matchpairs.js",
-	"stylesheet": "",
-	"themes": [],
+	"stylesheet": "matchpairs.css",
+	"themes": [{
+			"name": "Default",
+			"file": "matchpairs.css"
+	}],
 	"dependencies": [{
 		"name": "jquery"
 	}],
