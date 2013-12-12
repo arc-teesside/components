@@ -6,7 +6,7 @@ var panel = function (ID) {
 	// add fields defined by this
 	this.shown = 1; /* shown (+1), hidden (0) or collapsed (-1) */
 			/*-- could page with n>1 show page n (0 and -1 as above) */
-	this.header = "Some header text";
+	this.header = "";
 	this.text = "Some text";
 	// standard ARIA values (borrowed from the slider roles
 	// appropriate to numeric ranges or text values
