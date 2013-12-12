@@ -33,7 +33,12 @@
 			"type":"Sound",
 			"input":false,
 			"required":true,
-			"value":"http://arc.tees.ac.uk/WIDEST/Media/sound/android.mp3"
+			"choices": [
+				{"name": "Android", "str": "http://arc.tees.ac.uk/WIDEST/Media/sound/android.ogg"},
+				{"name": "Alarm", "str": "http://arc.tees.ac.uk/WIDEST/Media/sound/alarm.ogg"},
+				{"name": "Ring", "str": "http://arc.tees.ac.uk/WIDEST/Media/sound/ring.wav"},
+				{"name": "Starwars", "str": "http://arc.tees.ac.uk/WIDEST/Media/sound/starwars.ogg"}
+			]
 		},
 		{
 			"shortName":"controls",
