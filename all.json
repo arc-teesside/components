@@ -895,8 +895,8 @@
 },{
 	"id":"panel",
 	"className":"panel",
-	"name":"Configurable placeholder panel",
-	"description":"Blank placeholder Component",
+	"name":"Placeholder",
+	"description":"Blank configurable placeholder Component",
 	"category":"Layout",
 	"icon":"http://arc.tees.ac.uk/WIDEST/Widget/icons/panel.png",
 	"placeHolder":"",
@@ -950,7 +950,7 @@
 		},{
 			"shortName": "image",
 			"name": "Background image",
-			"type": "String",
+			"type": "Image",
 			"required": true,
 			"value": ""
 		}
@@ -1926,6 +1926,13 @@
 			"input":false,
 			"required":false,
 			"value":"Generic text"
+		},
+		{
+			"shortName":"fontSize",
+			"name":"Font size (px)",
+			"type":"Number",
+			"input":false,
+			"required":false
 		}
 	],
 	"actions":[],

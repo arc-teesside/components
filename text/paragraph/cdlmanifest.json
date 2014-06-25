@@ -32,6 +32,13 @@
 			"input":false,
 			"required":false,
 			"value":"Generic text"
+		},
+		{
+			"shortName":"fontSize",
+			"name":"Font size (px)",
+			"type":"Number",
+			"input":false,
+			"required":false
 		}
 	],
 	"actions":[],
