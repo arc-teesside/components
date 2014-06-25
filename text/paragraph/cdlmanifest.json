@@ -31,7 +31,7 @@
 			"type":"String",
 			"input":false,
 			"required":false,
-			"value":""
+			"value":"Generic text"
 		}
 	],
 	"actions":[],

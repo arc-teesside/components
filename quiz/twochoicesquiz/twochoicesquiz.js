@@ -193,12 +193,12 @@ var twochoicesquiz = function (ID) {
 		document.getElementById(_this.id+"-rightCell").style.color="#00CC18";
 		
 		var cellC = _this.row.insertCell(3);
-		cellC.style.color="#FF0000";
+		cellC.style.color="#14E31B";
 		var iconCR = document.createElement("img");
 		iconCR.id = _this.id +"-iconCR";
 		iconCR.style.border = "none";
 		iconCR.style.width = "36px";
-		iconCR.src = "http://arc.tees.ac.uk/WIDEST/Media/correct-icon.png";
+		iconCR.src = "http://arc.tees.ac.uk/WIDEST/Media/valid-icon.png";
 		iconCR.alt = "Correct";
 		
 		var elemCR = document.createTextNode("Correct");

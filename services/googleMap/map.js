@@ -8,8 +8,8 @@ var googlemap = function(ID) {
 	var _this = this;
 	
 	this.init = function() {
-				
-		if(navigator.geolocation){
+		_this.geocoder = new google.maps.Geocoder();
+		if(navigator.geolocation && _this.address == ''){
 			
 			navigator.geolocation.watchPosition(function (position){
 			
@@ -86,8 +86,12 @@ var googlemap = function(ID) {
 			};
 			
 			_this.map = new google.maps.Map(document.getElementById(_this.id+"_canvas"), myOptions);
+			
 		}
 		
+		if(_this.address != '') {
+			_this.codeAddress();
+		}
 	};
 	
 	this.codeAddress = function() {
